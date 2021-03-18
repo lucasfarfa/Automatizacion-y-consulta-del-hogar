@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/PIC18F4550_Pickit2/debug\USB_FAMELI_MASTERv6.1.X.debug.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>32768</length>
+      <used>8330</used>
+      <free>24438</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>2048</length>
+      <used>417</used>
+      <free>1631</free>
+    </memory>
+  </executable>
+</project>

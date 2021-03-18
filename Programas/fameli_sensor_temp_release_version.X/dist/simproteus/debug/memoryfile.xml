@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/simproteus/debug\FAmeli_Sensor_tempv2.X.debug.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>2048</length>
+      <used>463</used>
+      <free>1585</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>224</length>
+      <used>37</used>
+      <free>187</free>
+    </memory>
+  </executable>
+</project>

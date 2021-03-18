@@ -1,0 +1,103 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"1491 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[v _TMR0IF `Vb ~T0 @X0 0 e@90 ]
+"57
+[v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
+"47 user.h
+[v _tickCounter `Vui ~T0 @X0 0 e ]
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[; <" INDF equ 00h ;# ">
+"59
+[; <" TMR0 equ 01h ;# ">
+"66
+[; <" PCL equ 02h ;# ">
+"73
+[; <" STATUS equ 03h ;# ">
+"159
+[; <" FSR equ 04h ;# ">
+"166
+[; <" PORTA equ 05h ;# ">
+"228
+[; <" PORTB equ 06h ;# ">
+"290
+[; <" PCLATH equ 0Ah ;# ">
+"310
+[; <" INTCON equ 0Bh ;# ">
+"388
+[; <" PIR1 equ 0Ch ;# ">
+"445
+[; <" TMR1 equ 0Eh ;# ">
+"452
+[; <" TMR1L equ 0Eh ;# ">
+"459
+[; <" TMR1H equ 0Fh ;# ">
+"466
+[; <" T1CON equ 010h ;# ">
+"525
+[; <" TMR2 equ 011h ;# ">
+"532
+[; <" T2CON equ 012h ;# ">
+"603
+[; <" CCPR1 equ 015h ;# ">
+"610
+[; <" CCPR1L equ 015h ;# ">
+"617
+[; <" CCPR1H equ 016h ;# ">
+"624
+[; <" CCP1CON equ 017h ;# ">
+"682
+[; <" RCSTA equ 018h ;# ">
+"753
+[; <" TXREG equ 019h ;# ">
+"760
+[; <" RCREG equ 01Ah ;# ">
+"767
+[; <" CMCON equ 01Fh ;# ">
+"837
+[; <" OPTION_REG equ 081h ;# ">
+"907
+[; <" TRISA equ 085h ;# ">
+"969
+[; <" TRISB equ 086h ;# ">
+"1031
+[; <" PIE1 equ 08Ch ;# ">
+"1088
+[; <" PCON equ 08Eh ;# ">
+"1137
+[; <" PR2 equ 092h ;# ">
+"1144
+[; <" TXSTA equ 098h ;# ">
+"1201
+[; <" SPBRG equ 099h ;# ">
+"1208
+[; <" EEDATA equ 09Ah ;# ">
+"1215
+[; <" EEADR equ 09Bh ;# ">
+"1222
+[; <" EECON1 equ 09Ch ;# ">
+"1260
+[; <" EECON2 equ 09Dh ;# ">
+"1267
+[; <" VRCON equ 09Fh ;# ">
+[v $root$_isr `(v ~T0 @X0 0 e ]
+[v F662 `(v ~T0 @X0 1 tf ]
+"30 interrupts.c
+[v _isr `IF662 ~T0 @X0 1 e ]
+{
+[e :U _isr ]
+[f ]
+"38
+[e $ ! _TMR0IF 52  ]
+{
+"39
+[e = _TMR0IF -> -> 0 `i `b ]
+"40
+[e =+ _TMR0 -> -> 7 `i `uc ]
+"41
+[e ++ _tickCounter -> -> 1 `i `ui ]
+"42
+}
+[e :U 52 ]
+"60
+[e :UE 51 ]
+}

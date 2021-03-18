@@ -1,0 +1,249 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 6 ]
+"29 D:\FAmeli_Sensor_tempv2.X\user.c
+[e E635 . `uc
+UART_TX 0
+UART_RX 1
+MEASURING 2
+IDDLE 3
+]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"16 D:\FAmeli_Sensor_tempv2.X\DHT11.c
+[v _DHT11StartSignal DHT11StartSignal `(b  1 e 0 0 ]
+"32
+[v _DHT11CheckResponse DHT11CheckResponse `(b  1 e 0 0 ]
+"49
+[v _DHT11ReadByte DHT11ReadByte `(b  1 e 0 0 ]
+"30 D:\FAmeli_Sensor_tempv2.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+"28 D:\FAmeli_Sensor_tempv2.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"43 D:\FAmeli_Sensor_tempv2.X\user.c
+[v _initApp initApp `(v  1 e 1 0 ]
+"106
+[v _uartWriteByte uartWriteByte `(v  1 e 1 0 ]
+"128
+[v _uartReadByte uartReadByte `(b  1 e 0 0 ]
+"152
+[v _tickRead tickRead `(ui  1 e 2 0 ]
+"167
+[v _uartConfig uartConfig `(v  1 e 1 0 ]
+"186
+[v _TxMode TxMode `(v  1 e 1 0 ]
+"191
+[v _RxMode RxMode `(v  1 e 1 0 ]
+"196
+[v _ReadTemp ReadTemp `(b  1 e 0 0 ]
+"213
+[v _IniciarMEFtemp IniciarMEFtemp `(v  1 e 1 0 ]
+"217
+[v _ActualizarMEFtemp ActualizarMEFtemp `(v  1 e 1 0 ]
+"57 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S129 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"181
+[u S138 . 1 `S129 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES138  1 e 1 @5 ]
+"523
+[v _TMR2 TMR2 `VEuc  1 e 1 @17 ]
+"530
+[v _T2CON T2CON `VEuc  1 e 1 @18 ]
+"751
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"758
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+[s S74 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"922
+[u S83 . 1 `S74 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES83  1 e 1 @133 ]
+[s S53 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"984
+[u S62 . 1 `S53 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES62  1 e 1 @134 ]
+"1199
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"1339
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"1369
+[v _CM0 CM0 `VEb  1 e 0 @248 ]
+"1371
+[v _CM1 CM1 `VEb  1 e 0 @249 ]
+"1373
+[v _CM2 CM2 `VEb  1 e 0 @250 ]
+"1379
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"1391
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"1407
+[v _PS0 PS0 `VEb  1 e 0 @1032 ]
+"1409
+[v _PS1 PS1 `VEb  1 e 0 @1033 ]
+"1411
+[v _PS2 PS2 `VEb  1 e 0 @1034 ]
+"1413
+[v _PSA PSA `VEb  1 e 0 @1035 ]
+"1453
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"1465
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"1469
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"1471
+[v _T0CS T0CS `VEb  1 e 0 @1037 ]
+"1489
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"1491
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"1505
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"1533
+[v _TRISB1 TRISB1 `VEb  1 e 0 @1073 ]
+"1535
+[v _TRISB2 TRISB2 `VEb  1 e 0 @1074 ]
+"1553
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"1557
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"28 D:\FAmeli_Sensor_tempv2.X\user.c
+[v _tickCounter tickCounter `VEui  1 e 2 0 ]
+"29
+[v _estadoActualTemp estadoActualTemp `E635  1 s 1 estadoActualTemp ]
+"30
+[v _tinicio tinicio `ui  1 s 2 tinicio ]
+"28 D:\FAmeli_Sensor_tempv2.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"37
+} 0
+"43 D:\FAmeli_Sensor_tempv2.X\user.c
+[v _initApp initApp `(v  1 e 1 0 ]
+{
+"85
+} 0
+"167
+[v _uartConfig uartConfig `(v  1 e 1 0 ]
+{
+"184
+} 0
+"213
+[v _IniciarMEFtemp IniciarMEFtemp `(v  1 e 1 0 ]
+{
+"216
+} 0
+"217
+[v _ActualizarMEFtemp ActualizarMEFtemp `(v  1 e 1 0 ]
+{
+"218
+[v ActualizarMEFtemp@res res `uc  1 s 1 res ]
+"219
+[v ActualizarMEFtemp@temp temp `uc  1 s 1 temp ]
+[v ActualizarMEFtemp@data data `[5]uc  1 s 5 data ]
+"265
+} 0
+"106
+[v _uartWriteByte uartWriteByte `(v  1 e 1 0 ]
+{
+[v uartWriteByte@value value `uc  1 a 1 wreg ]
+[v uartWriteByte@value value `uc  1 a 1 wreg ]
+[v uartWriteByte@value value `uc  1 a 1 5 ]
+"110
+} 0
+"128
+[v _uartReadByte uartReadByte `(b  1 e 0 0 ]
+{
+[v uartReadByte@receivedByte receivedByte `*.4uc  1 a 1 wreg ]
+[v uartReadByte@receivedByte receivedByte `*.4uc  1 a 1 wreg ]
+[v uartReadByte@receivedByte receivedByte `*.4uc  1 a 1 0 ]
+"134
+} 0
+"186
+[v _TxMode TxMode `(v  1 e 1 0 ]
+{
+"190
+} 0
+"191
+[v _RxMode RxMode `(v  1 e 1 0 ]
+{
+"194
+} 0
+"196
+[v _ReadTemp ReadTemp `(b  1 e 0 0 ]
+{
+[v ReadTemp@data data `*.4uc  1 a 1 wreg ]
+"197
+[v ReadTemp@i i `uc  1 a 1 11 ]
+"196
+[v ReadTemp@data data `*.4uc  1 a 1 wreg ]
+"198
+[v ReadTemp@data data `*.4uc  1 a 1 10 ]
+"211
+} 0
+"16 D:\FAmeli_Sensor_tempv2.X\DHT11.c
+[v _DHT11StartSignal DHT11StartSignal `(b  1 e 0 0 ]
+{
+"17
+[v DHT11StartSignal@tinicio tinicio `ui  1 a 2 8 ]
+"30
+} 0
+"152 D:\FAmeli_Sensor_tempv2.X\user.c
+[v _tickRead tickRead `(ui  1 e 2 0 ]
+{
+"153
+[v tickRead@aux aux `ui  1 a 2 2 ]
+"158
+} 0
+"49 D:\FAmeli_Sensor_tempv2.X\DHT11.c
+[v _DHT11ReadByte DHT11ReadByte `(b  1 e 0 0 ]
+{
+[v DHT11ReadByte@data data `*.4uc  1 a 1 wreg ]
+"51
+[v DHT11ReadByte@i i `uc  1 a 1 3 ]
+"49
+[v DHT11ReadByte@data data `*.4uc  1 a 1 wreg ]
+[v DHT11ReadByte@data data `*.4uc  1 a 1 2 ]
+"64
+} 0
+"32
+[v _DHT11CheckResponse DHT11CheckResponse `(b  1 e 0 0 ]
+{
+"47
+} 0
+"30 D:\FAmeli_Sensor_tempv2.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"60
+} 0

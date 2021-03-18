@@ -1,0 +1,146 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"30 C:\Users\g_fer\Desktop\UltraSonido.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+"66
+[v _US_ISR US_ISR `(b  1 e 0 0 ]
+"27 C:\Users\g_fer\Desktop\UltraSonido.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"41 C:\Users\g_fer\Desktop\UltraSonido.X\user.c
+[v _initApp initApp `(v  1 e 1 0 ]
+"153
+[v _tickRead tickRead `(ui  1 e 2 0 ]
+"57 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S68 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"181
+[u S77 . 1 `S68 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES77  1 e 1 @5 ]
+[s S37 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"243
+[u S46 . 1 `S37 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES46  1 e 1 @6 ]
+"530
+[v _T2CON T2CON `VEuc  1 e 1 @18 ]
+"751
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"758
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+[s S135 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"922
+[u S144 . 1 `S135 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES144  1 e 1 @133 ]
+[s S114 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"984
+[u S123 . 1 `S114 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES123  1 e 1 @134 ]
+"1135
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"1369
+[v _CM0 CM0 `VEb  1 e 0 @248 ]
+"1371
+[v _CM1 CM1 `VEb  1 e 0 @249 ]
+"1373
+[v _CM2 CM2 `VEb  1 e 0 @250 ]
+"1391
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"1405
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"1407
+[v _PS0 PS0 `VEb  1 e 0 @1032 ]
+"1409
+[v _PS1 PS1 `VEb  1 e 0 @1033 ]
+"1411
+[v _PS2 PS2 `VEb  1 e 0 @1034 ]
+"1413
+[v _PSA PSA `VEb  1 e 0 @1035 ]
+"1453
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"1471
+[v _T0CS T0CS `VEb  1 e 0 @1037 ]
+"1489
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"1491
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"1501
+[v _TMR2IE TMR2IE `VEb  1 e 0 @1121 ]
+"1505
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"1557
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"27 C:\Users\g_fer\Desktop\UltraSonido.X\user.c
+[v _tickCounter tickCounter `VEui  1 e 2 0 ]
+"28
+[v _intC intC `VEuc  1 e 1 0 ]
+"27 C:\Users\g_fer\Desktop\UltraSonido.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"32
+[v main@tinicio tinicio `ui  1 a 2 8 ]
+"45
+} 0
+"153 C:\Users\g_fer\Desktop\UltraSonido.X\user.c
+[v _tickRead tickRead `(ui  1 e 2 0 ]
+{
+"154
+[v tickRead@aux aux `ui  1 a 2 2 ]
+"159
+} 0
+"41
+[v _initApp initApp `(v  1 e 1 0 ]
+{
+"86
+} 0
+"30 C:\Users\g_fer\Desktop\UltraSonido.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"60
+} 0
+"66
+[v _US_ISR US_ISR `(b  1 e 0 0 ]
+{
+"79
+} 0

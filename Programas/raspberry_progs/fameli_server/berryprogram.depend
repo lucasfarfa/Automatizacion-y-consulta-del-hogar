@@ -1,0 +1,356 @@
+# depslib dependency file v1.0
+1559865984 source:/home/pi/Documents/berryprogram/main.c
+	<stdio.h>
+	<stdlib.h>
+	"my_sem.h"
+	"my_shmem.h"
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	"serial_port.h"
+	<signal.h>
+	"socket_client.h"
+	"socket_server.h"
+
+1556797414 /home/pi/Documents/berryprogram/my_sem.h
+	<sys/sem.h>
+	<fcntl.h>
+	<sys/ipc.h>
+	<sys/types.h>
+
+1556797414 /home/pi/Documents/berryprogram/my_shmem.h
+	<sys/ipc.h>
+	<sys/shm.h>
+	<sys/types.h>
+	<stdint.h>
+
+1559837133 source:/home/pi/Documents/berryprogram/my_sem.c
+	<stdio.h>
+	"my_sem.h"
+
+1556904932 source:/home/pi/Documents/berryprogram/my_shmem.c
+	<stdio.h>
+	<stdint.h>
+	"my_shmem.h"
+
+1556910661 /home/pi/Documents/berryprogram/UART.h
+
+1559837274 /home/pi/Documents/berryprogram/serial_port.h
+	<stdio.h>
+	<stdint.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	<stdlib.h>
+
+1559846834 source:/home/pi/Documents/berryprogram/serial_port.c
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	<stdlib.h>
+	<stdint.h>
+	"serial_port.h"
+
+1560875510 /home/pi/Documents/berryprogram/socket_client.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<unistd.h>
+	<arpa/inet.h>
+	<stdint.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<stdint.h>
+
+1560874268 /home/pi/Documents/berryprogram/socket_server.h
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<errno.h>
+	<sys/ipc.h>
+	<sys/shm.h>
+	<sys/sem.h>
+	<signal.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/wait.h>
+	<sys/ioctl.h>
+	<stdint.h>
+
+1566328856 source:/home/pi/Documents/Main_program/main.c
+	<stdio.h>
+	<stdlib.h>
+	"my_sem.h"
+	"my_shmem.h"
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	"serial_port.h"
+	<signal.h>
+	<time.h>
+	"socket_client.h"
+	"socket_server.h"
+
+1566374650 /home/pi/Documents/Main_program/my_sem.h
+	<sys/sem.h>
+	<fcntl.h>
+	<sys/ipc.h>
+	<sys/types.h>
+
+1566374650 /home/pi/Documents/Main_program/my_shmem.h
+	<sys/ipc.h>
+	<sys/shm.h>
+	<sys/types.h>
+	<stdint.h>
+
+1566374650 /home/pi/Documents/Main_program/serial_port.h
+	<stdio.h>
+	<stdint.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	<stdlib.h>
+
+1566374650 /home/pi/Documents/Main_program/socket_client.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<unistd.h>
+	<arpa/inet.h>
+	<stdint.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<stdint.h>
+
+1566374650 /home/pi/Documents/Main_program/socket_server.h
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<errno.h>
+	<sys/ipc.h>
+	<sys/shm.h>
+	<sys/sem.h>
+	<signal.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/wait.h>
+	<sys/ioctl.h>
+	<stdint.h>
+
+1566374650 source:/home/pi/Documents/Main_program/my_sem.c
+	<stdio.h>
+	"my_sem.h"
+
+1566374650 source:/home/pi/Documents/Main_program/my_shmem.c
+	<stdio.h>
+	<stdint.h>
+	"my_shmem.h"
+
+1566374650 source:/home/pi/Documents/Main_program/serial_port.c
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	<stdlib.h>
+	<stdint.h>
+	"serial_port.h"
+
+1566374650 source:/home/pi/Documents/Main_program/socket_client.c
+	"socket_client.h"
+
+1566315852 source:/home/pi/Documents/Main_program/socket_server.c
+	"socket_server.h"
+	<unistd.h>
+
+1568299628 source:/home/pi/Documents/Main_program_v2/my_sem.c
+	<stdio.h>
+	"my_sem.h"
+
+1568299628 /home/pi/Documents/Main_program_v2/my_sem.h
+	<sys/sem.h>
+	<fcntl.h>
+	<sys/ipc.h>
+	<sys/types.h>
+
+1568299628 source:/home/pi/Documents/Main_program_v2/my_shmem.c
+	<stdio.h>
+	<stdint.h>
+	"my_shmem.h"
+
+1568299628 /home/pi/Documents/Main_program_v2/my_shmem.h
+	<sys/ipc.h>
+	<sys/shm.h>
+	<sys/types.h>
+	<stdint.h>
+
+1570860180 source:/home/pi/Documents/Main_program_v2/serial_port.c
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	<stdlib.h>
+	<stdint.h>
+	"serial_port.h"
+
+1568299628 /home/pi/Documents/Main_program_v2/serial_port.h
+	<stdio.h>
+	<stdint.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	<stdlib.h>
+
+1568299628 source:/home/pi/Documents/Main_program_v2/socket_client.c
+	"socket_client.h"
+
+1568299628 /home/pi/Documents/Main_program_v2/socket_client.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<unistd.h>
+	<arpa/inet.h>
+	<stdint.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<stdint.h>
+
+1568299628 source:/home/pi/Documents/Main_program_v2/socket_server.c
+	"socket_server.h"
+	<unistd.h>
+
+1568299628 /home/pi/Documents/Main_program_v2/socket_server.h
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<errno.h>
+	<sys/ipc.h>
+	<sys/shm.h>
+	<sys/sem.h>
+	<signal.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/wait.h>
+	<sys/ioctl.h>
+	<stdint.h>
+
+1572046861 source:/home/pi/Documents/Main_program_v2/main.c
+	<stdio.h>
+	<stdlib.h>
+	"my_sem.h"
+	"my_shmem.h"
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	"serial_port.h"
+	<signal.h>
+	<time.h>
+	"socket_client.h"
+	"socket_server.h"
+
+1568299628 source:/home/pi/Documents/fameli_server/my_sem.c
+	<stdio.h>
+	"my_sem.h"
+
+1568299628 /home/pi/Documents/fameli_server/my_sem.h
+	<sys/sem.h>
+	<fcntl.h>
+	<sys/ipc.h>
+	<sys/types.h>
+
+1568299628 source:/home/pi/Documents/fameli_server/my_shmem.c
+	<stdio.h>
+	<stdint.h>
+	"my_shmem.h"
+
+1568299628 /home/pi/Documents/fameli_server/my_shmem.h
+	<sys/ipc.h>
+	<sys/shm.h>
+	<sys/types.h>
+	<stdint.h>
+
+1570860180 source:/home/pi/Documents/fameli_server/serial_port.c
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	<stdlib.h>
+	<stdint.h>
+	"serial_port.h"
+
+1568299628 /home/pi/Documents/fameli_server/serial_port.h
+	<stdio.h>
+	<stdint.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<string.h>
+	<stdlib.h>
+
+1568299628 source:/home/pi/Documents/fameli_server/socket_client.c
+	"socket_client.h"
+
+1568299628 /home/pi/Documents/fameli_server/socket_client.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<unistd.h>
+	<arpa/inet.h>
+	<stdint.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<stdint.h>
+
+1568299628 source:/home/pi/Documents/fameli_server/socket_server.c
+	"socket_server.h"
+	<unistd.h>
+
+1568299628 /home/pi/Documents/fameli_server/socket_server.h
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<errno.h>
+	<sys/ipc.h>
+	<sys/shm.h>
+	<sys/sem.h>
+	<signal.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/wait.h>
+	<sys/ioctl.h>
+	<stdint.h>
+

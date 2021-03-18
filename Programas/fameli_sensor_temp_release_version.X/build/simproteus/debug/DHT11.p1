@@ -1,0 +1,264 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"911 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[s S35 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S35 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
+"910
+[u S34 `S35 1 ]
+[n S34 . . ]
+"922
+[v _TRISAbits `VS34 ~T0 @X0 0 e@133 ]
+"170
+[s S6 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S6 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"169
+[u S5 `S6 1 ]
+[n S5 . . ]
+"181
+[v _PORTAbits `VS5 ~T0 @X0 0 e@5 ]
+"58 user.h
+[v _tickRead `(ui ~T0 @X0 0 ef ]
+[v F599 `(v ~T0 @X0 1 tf1`ul ]
+"153 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic.h
+[v __delay `JF599 ~T0 @X0 0 e ]
+[p i __delay ]
+"523 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[v _TMR2 `Vuc ~T0 @X0 0 e@17 ]
+"1505
+[v _TMR2ON `Vb ~T0 @X0 0 e@146 ]
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[; <" INDF equ 00h ;# ">
+"59
+[; <" TMR0 equ 01h ;# ">
+"66
+[; <" PCL equ 02h ;# ">
+"73
+[; <" STATUS equ 03h ;# ">
+"159
+[; <" FSR equ 04h ;# ">
+"166
+[; <" PORTA equ 05h ;# ">
+"228
+[; <" PORTB equ 06h ;# ">
+"290
+[; <" PCLATH equ 0Ah ;# ">
+"310
+[; <" INTCON equ 0Bh ;# ">
+"388
+[; <" PIR1 equ 0Ch ;# ">
+"445
+[; <" TMR1 equ 0Eh ;# ">
+"452
+[; <" TMR1L equ 0Eh ;# ">
+"459
+[; <" TMR1H equ 0Fh ;# ">
+"466
+[; <" T1CON equ 010h ;# ">
+"525
+[; <" TMR2 equ 011h ;# ">
+"532
+[; <" T2CON equ 012h ;# ">
+"603
+[; <" CCPR1 equ 015h ;# ">
+"610
+[; <" CCPR1L equ 015h ;# ">
+"617
+[; <" CCPR1H equ 016h ;# ">
+"624
+[; <" CCP1CON equ 017h ;# ">
+"682
+[; <" RCSTA equ 018h ;# ">
+"753
+[; <" TXREG equ 019h ;# ">
+"760
+[; <" RCREG equ 01Ah ;# ">
+"767
+[; <" CMCON equ 01Fh ;# ">
+"837
+[; <" OPTION_REG equ 081h ;# ">
+"907
+[; <" TRISA equ 085h ;# ">
+"969
+[; <" TRISB equ 086h ;# ">
+"1031
+[; <" PIE1 equ 08Ch ;# ">
+"1088
+[; <" PCON equ 08Eh ;# ">
+"1137
+[; <" PR2 equ 092h ;# ">
+"1144
+[; <" TXSTA equ 098h ;# ">
+"1201
+[; <" SPBRG equ 099h ;# ">
+"1208
+[; <" EEDATA equ 09Ah ;# ">
+"1215
+[; <" EEADR equ 09Bh ;# ">
+"1222
+[; <" EECON1 equ 09Ch ;# ">
+"1260
+[; <" EECON2 equ 09Dh ;# ">
+"1267
+[; <" VRCON equ 09Fh ;# ">
+"26 system.h
+[p x FOSC=HS ]
+"27
+[p x WDTE=OFF ]
+"28
+[p x PWRTE=OFF ]
+"29
+[p x MCLRE=OFF ]
+"30
+[p x CP=OFF ]
+"31
+[p x CPD=OFF ]
+"32
+[p x BOREN=OFF ]
+"33
+[p x LVP=OFF ]
+"16 DHT11.c
+[v _DHT11StartSignal `(b ~T0 @X0 1 ef ]
+{
+[e :U _DHT11StartSignal ]
+[f ]
+"17
+[v _tinicio `ui ~T0 @X0 1 a ]
+"18
+[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
+"19
+[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
+"20
+[e = _tinicio ( _tickRead ..  ]
+"21
+[e $U 52  ]
+[e :U 53 ]
+[e :U 52 ]
+[e $ < - ( _tickRead ..  _tinicio -> -> 19 `i `ui 53  ]
+[e :U 54 ]
+"22
+[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
+"23
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
+"24
+[e $ ! == -> . . _PORTAbits 0 0 `i -> 0 `i 55  ]
+{
+"25
+[e ) -> -> 1 `i `b ]
+[e $UE 51  ]
+"26
+}
+[e $U 56  ]
+"27
+[e :U 55 ]
+"28
+[e ) -> -> 0 `i `b ]
+[e $UE 51  ]
+[e :U 56 ]
+"30
+[e :UE 51 ]
+}
+"32
+[v _DHT11CheckResponse `(b ~T0 @X0 1 ef ]
+{
+[e :U _DHT11CheckResponse ]
+[f ]
+"33
+[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
+"34
+[e = _TMR2 -> -> 0 `i `uc ]
+"35
+[e = _TMR2ON -> -> 1 `i `b ]
+"36
+[e $U 58  ]
+[e :U 59 ]
+[e :U 58 ]
+[e $ == -> . . _PORTAbits 0 0 `i -> 0 `i 59  ]
+[e :U 60 ]
+"37
+[e = _TMR2ON -> -> 0 `i `b ]
+"38
+[e $ ! < -> _TMR2 `i -> 50 `i 61  ]
+"39
+[e ) -> -> 0 `i `b ]
+[e $UE 57  ]
+[e :U 61 ]
+"40
+[e = _TMR2 -> -> 0 `i `uc ]
+"41
+[e = _TMR2ON -> -> 1 `i `b ]
+"42
+[e $U 62  ]
+[e :U 63 ]
+[e :U 62 ]
+[e $ == -> . . _PORTAbits 0 0 `i -> 1 `i 63  ]
+[e :U 64 ]
+"43
+[e = _TMR2ON -> -> 0 `i `b ]
+"44
+[e $ ! < -> _TMR2 `i -> 60 `i 65  ]
+"45
+[e ) -> -> 0 `i `b ]
+[e $UE 57  ]
+[e :U 65 ]
+"46
+[e ) -> -> 1 `i `b ]
+[e $UE 57  ]
+"47
+[e :UE 57 ]
+}
+"49
+[v _DHT11ReadByte `(b ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _DHT11ReadByte ]
+[v _data `*uc ~T0 @X0 1 r1 ]
+[f ]
+"50
+[e = *U _data -> -> 0 `i `uc ]
+"51
+[v _i `uc ~T0 @X0 1 a ]
+"52
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 67  ]
+[e $U 68  ]
+[e :U 67 ]
+{
+"53
+[e $U 70  ]
+[e :U 71 ]
+[e :U 70 ]
+[e $ == -> . . _PORTAbits 0 0 `i -> 0 `i 71  ]
+[e :U 72 ]
+"54
+[e = _TMR2 -> -> 0 `i `uc ]
+"55
+[e = _TMR2ON -> -> 1 `i `b ]
+"56
+[e $U 73  ]
+[e :U 74 ]
+[e :U 73 ]
+[e $ == -> . . _PORTAbits 0 0 `i -> 1 `i 74  ]
+[e :U 75 ]
+"57
+[e = _TMR2ON -> -> 0 `i `b ]
+"58
+[e $ ! > -> _TMR2 `i -> 40 `i 76  ]
+{
+"59
+[e =| *U _data -> << -> 1 `i - -> 7 `i -> _i `i `uc ]
+"60
+}
+[e :U 76 ]
+"62
+}
+"52
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 67  ]
+[e :U 68 ]
+"62
+}
+"63
+[e ) -> -> 1 `i `b ]
+[e $UE 66  ]
+"64
+[e :UE 66 ]
+}

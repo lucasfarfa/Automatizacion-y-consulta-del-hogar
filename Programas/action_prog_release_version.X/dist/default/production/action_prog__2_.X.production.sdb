@@ -1,0 +1,183 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 6 ]
+"10 Z:\action_prog (2).X\user.c
+[e E634 . `uc
+RX 0
+TX 1
+ACTION 2
+]
+"62 C:\Program Files\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"11 Z:\action_prog (2).X\main.c
+[v _main main `(v  1 e 1 0 ]
+"15 Z:\action_prog (2).X\user.c
+[v _initApp initApp `(v  1 e 1 0 ]
+"37
+[v _uartConfig uartConfig `(v  1 e 1 0 ]
+"54
+[v _uartReadByte uartReadByte `(b  1 e 0 0 ]
+"62
+[v _uartWriteByte uartWriteByte `(v  1 e 1 0 ]
+"68
+[v _tickRead tickRead `(ui  1 e 2 0 ]
+"83
+[v _InicializarMEF InicializarMEF `(v  1 e 1 0 ]
+"88
+[v _ActualizarMEF ActualizarMEF `(v  1 e 1 0 ]
+"204
+[v _TxMode TxMode `(v  1 e 1 0 ]
+"209
+[v _RxMode RxMode `(v  1 e 1 0 ]
+[s S131 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"181 C:\Program Files\Microchip\xc8\v1.45\include\pic16f628a.h
+[u S140 . 1 `S131 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES140  1 e 1 @5 ]
+[s S85 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"243
+[u S94 . 1 `S85 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES94  1 e 1 @6 ]
+"751
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"758
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+[s S64 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"922
+[u S73 . 1 `S64 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES73  1 e 1 @133 ]
+[s S43 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"984
+[u S52 . 1 `S43 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES52  1 e 1 @134 ]
+"1199
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"1339
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"1369
+[v _CM0 CM0 `VEb  1 e 0 @248 ]
+"1371
+[v _CM1 CM1 `VEb  1 e 0 @249 ]
+"1373
+[v _CM2 CM2 `VEb  1 e 0 @250 ]
+"1379
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"1391
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"1453
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"1465
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"1469
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"1553
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"1557
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"8 Z:\action_prog (2).X\user.c
+[v _tickCounter tickCounter `VEui  1 e 2 0 ]
+"10
+[v _estadoActual estadoActual `E634  1 s 1 estadoActual ]
+"11
+[v _tInicio tInicio `ui  1 e 2 0 ]
+"11 Z:\action_prog (2).X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"17
+} 0
+"15 Z:\action_prog (2).X\user.c
+[v _initApp initApp `(v  1 e 1 0 ]
+{
+"35
+} 0
+"37
+[v _uartConfig uartConfig `(v  1 e 1 0 ]
+{
+"52
+} 0
+"83
+[v _InicializarMEF InicializarMEF `(v  1 e 1 0 ]
+{
+"87
+} 0
+"68
+[v _tickRead tickRead `(ui  1 e 2 0 ]
+{
+"69
+[v tickRead@aux aux `ui  1 a 2 2 ]
+"74
+} 0
+"88
+[v _ActualizarMEF ActualizarMEF `(v  1 e 1 0 ]
+{
+"89
+[v ActualizarMEF@res res `uc  1 s 1 res ]
+"90
+[v ActualizarMEF@aux aux `uc  1 s 1 aux ]
+"200
+} 0
+"62
+[v _uartWriteByte uartWriteByte `(v  1 e 1 0 ]
+{
+[v uartWriteByte@value value `uc  1 a 1 wreg ]
+[v uartWriteByte@value value `uc  1 a 1 wreg ]
+[v uartWriteByte@value value `uc  1 a 1 0 ]
+"66
+} 0
+"54
+[v _uartReadByte uartReadByte `(b  1 e 0 0 ]
+{
+[v uartReadByte@receivedByte receivedByte `*.1uc  1 a 1 wreg ]
+[v uartReadByte@receivedByte receivedByte `*.1uc  1 a 1 wreg ]
+[v uartReadByte@receivedByte receivedByte `*.1uc  1 a 1 1 ]
+"60
+} 0
+"204
+[v _TxMode TxMode `(v  1 e 1 0 ]
+{
+"208
+} 0
+"209
+[v _RxMode RxMode `(v  1 e 1 0 ]
+{
+"212
+} 0

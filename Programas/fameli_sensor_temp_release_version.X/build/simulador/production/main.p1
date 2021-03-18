@@ -1,0 +1,232 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[p mainexit ]
+"51 user.h
+[v _initApp `(v ~T0 @X0 0 ef ]
+"232 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[s S8 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S8 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"231
+[u S7 `S8 1 ]
+[n S7 . . ]
+"243
+[v _PORTBbits `VS7 ~T0 @X0 0 e@6 ]
+"58 user.h
+[v _tickRead `(ui ~T0 @X0 0 ef ]
+"48 DHT11.h
+[v _DHT11StartSignal `(b ~T0 @X0 0 ef ]
+"49
+[v _DHT11CheckResponse `(b ~T0 @X0 0 ef ]
+"1391 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"50 DHT11.h
+[v _DHT11ReadByte `(b ~T0 @X0 0 ef1`*uc ]
+"61 user.h
+[v _RxMode `(v ~T0 @X0 0 ef ]
+"54
+[v _uartReadByte `(b ~T0 @X0 0 ef1`*uc ]
+"60
+[v _TxMode `(v ~T0 @X0 0 ef ]
+"53
+[v _uartWriteByte `(v ~T0 @X0 0 ef1`uc ]
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f628a.h
+[; <" INDF equ 00h ;# ">
+"59
+[; <" TMR0 equ 01h ;# ">
+"66
+[; <" PCL equ 02h ;# ">
+"73
+[; <" STATUS equ 03h ;# ">
+"159
+[; <" FSR equ 04h ;# ">
+"166
+[; <" PORTA equ 05h ;# ">
+"228
+[; <" PORTB equ 06h ;# ">
+"290
+[; <" PCLATH equ 0Ah ;# ">
+"310
+[; <" INTCON equ 0Bh ;# ">
+"388
+[; <" PIR1 equ 0Ch ;# ">
+"445
+[; <" TMR1 equ 0Eh ;# ">
+"452
+[; <" TMR1L equ 0Eh ;# ">
+"459
+[; <" TMR1H equ 0Fh ;# ">
+"466
+[; <" T1CON equ 010h ;# ">
+"525
+[; <" TMR2 equ 011h ;# ">
+"532
+[; <" T2CON equ 012h ;# ">
+"603
+[; <" CCPR1 equ 015h ;# ">
+"610
+[; <" CCPR1L equ 015h ;# ">
+"617
+[; <" CCPR1H equ 016h ;# ">
+"624
+[; <" CCP1CON equ 017h ;# ">
+"682
+[; <" RCSTA equ 018h ;# ">
+"753
+[; <" TXREG equ 019h ;# ">
+"760
+[; <" RCREG equ 01Ah ;# ">
+"767
+[; <" CMCON equ 01Fh ;# ">
+"837
+[; <" OPTION_REG equ 081h ;# ">
+"907
+[; <" TRISA equ 085h ;# ">
+"969
+[; <" TRISB equ 086h ;# ">
+"1031
+[; <" PIE1 equ 08Ch ;# ">
+"1088
+[; <" PCON equ 08Eh ;# ">
+"1137
+[; <" PR2 equ 092h ;# ">
+"1144
+[; <" TXSTA equ 098h ;# ">
+"1201
+[; <" SPBRG equ 099h ;# ">
+"1208
+[; <" EEDATA equ 09Ah ;# ">
+"1215
+[; <" EEADR equ 09Bh ;# ">
+"1222
+[; <" EECON1 equ 09Ch ;# ">
+"1260
+[; <" EECON2 equ 09Dh ;# ">
+"1267
+[; <" VRCON equ 09Fh ;# ">
+"26 system.h
+[p x FOSC=HS ]
+"27
+[p x WDTE=OFF ]
+"28
+[p x PWRTE=OFF ]
+"29
+[p x MCLRE=OFF ]
+"30
+[p x CP=OFF ]
+"31
+[p x CPD=OFF ]
+"32
+[p x BOREN=OFF ]
+"33
+[p x LVP=OFF ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"28 main.c
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"31
+[e ( _initApp ..  ]
+"32
+[e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
+"33
+[v _tinicio `ui ~T0 @X0 1 a ]
+"34
+[v _i `uc ~T0 @X0 1 a ]
+"35
+[v _data `uc ~T0 @X0 -> 5 `i a ]
+"36
+[v _request `uc ~T0 @X0 1 a ]
+[v _aux `uc ~T0 @X0 1 a ]
+"37
+[e :U 54 ]
+{
+"38
+[e = _tinicio ( _tickRead ..  ]
+"39
+[e $ ! ( _DHT11StartSignal ..  56  ]
+{
+"40
+[e $ ! ( _DHT11CheckResponse ..  57  ]
+{
+"42
+[e = _GIE -> -> 0 `i `b ]
+"43
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 5 `i 58  ]
+[e $U 59  ]
+[e :U 58 ]
+{
+"44
+[e ( _DHT11ReadByte (1 &U *U + &U _data * -> -> - -> 4 `i -> _i `i `ui `ux -> -> # *U &U _data `ui `ux ]
+"45
+}
+"43
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 5 `i 58  ]
+[e :U 59 ]
+"45
+}
+"46
+[e = _GIE -> -> 1 `i `b ]
+"47
+[e = . . _PORTBbits 0 0 -> -> ! != -> . . _PORTBbits 0 0 `i -> -> -> 0 `i `Vuc `i `i `uc ]
+"48
+[e ( _RxMode ..  ]
+"49
+[e ( _uartReadByte (1 &U _request ]
+"50
+[e $ ! == -> _request `i -> 149 `i 61  ]
+{
+"51
+[e = _request -> -> 0 `i `uc ]
+"52
+[e ( _TxMode ..  ]
+"53
+[e ( _uartWriteByte (1 *U + &U _data * -> -> -> 2 `i `ui `ux -> -> # *U &U _data `ui `ux ]
+"54
+[e $U 62  ]
+[e :U 63 ]
+[e :U 62 ]
+[e $ ! ( _uartReadByte (1 &U _aux 63  ]
+[e :U 64 ]
+"55
+[e $ ! == -> _aux `i -> *U + &U _data * -> -> -> 2 `i `ui `ux -> -> # *U &U _data `ui `ux `i 65  ]
+{
+"56
+[e ( _RxMode ..  ]
+"57
+}
+[e :U 65 ]
+"60
+[e ( _RxMode ..  ]
+"61
+}
+[e :U 61 ]
+"63
+[e $U 66  ]
+[e :U 67 ]
+[e :U 66 ]
+[e $ < - ( _tickRead ..  _tinicio -> -> 5 `i `ui 67  ]
+[e :U 68 ]
+"66
+}
+[e $U 69  ]
+"67
+[e :U 57 ]
+{
+"70
+}
+[e :U 69 ]
+"72
+}
+[e :U 56 ]
+"74
+}
+[e :U 53 ]
+"37
+[e $U 54  ]
+[e :U 55 ]
+"76
+[e :UE 52 ]
+}
